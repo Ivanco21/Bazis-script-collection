@@ -1,0 +1,11 @@
+{
+    "description": "Bazis script collection",
+    "license": "MIT",
+    "repository": {
+        "type" : "git",
+        "url" : "https://github.com/Ivanco21/Bazis-script-collection"
+    },
+    "dependencies": {
+        "yandex.translate": "^1.0.1"
+    }
+}
