@@ -97,5 +97,6 @@ public/
 
 # user files
 user_settings/
+user_files/
 api_keys.json
 .vscode
