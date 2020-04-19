@@ -1,0 +1,15 @@
+import "C:\Users\mne21\Desktop\RPA_Robin\Projects\BM\UI_BM.appmask" as BM_UI
+
+UIAutomation.Click Element:BM_UI.Bm_window.MenuItem ClickType:ClickType.LeftClick MousePositionRelativeToElement:RectangleEdgePoint.MiddleCenter OffsetX:0 OffsetY:0
+UIAutomation.Click Element:BM_UI.ContextMenu.MenuItem ClickType:ClickType.LeftClick MousePositionRelativeToElement:RectangleEdgePoint.MiddleCenter OffsetX:0 OffsetY:0
+
+label ReCheckControl
+wait 2
+if (UIAutomation.WindowContainsElement Element: BM_UI.Export_window.Tab_Item) then
+	
+else
+	goto ReCheckControl
+end
+
+UIAutomation.Click Element:BM_UI.Export_window.Tab_Item ClickType:ClickType.LeftClick MousePositionRelativeToElement:RectangleEdgePoint.MiddleCenter OffsetX:0 OffsetY:0
+UIAutomation.Click Element:BM_UI.Export_window.Check_Box_XML ClickType:ClickType.LeftClick MousePositionRelativeToElement:RectangleEdgePoint.MiddleCenter OffsetX:0 OffsetY:0
